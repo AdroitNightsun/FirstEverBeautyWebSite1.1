@@ -180,7 +180,7 @@ body::before {
 .service-card:hover, .service-card:active, .service-card:hover a, .service-card:active a {
   transform: translateY(-4px) scale(1.03);
   /* box-shadow: 0 12px 32px 0 rgba(176, 58, 105, 0.144); */
-  background: #FFDFD4;
+  /* background: #FFDFD4; */
 }
 
 .service-img {
