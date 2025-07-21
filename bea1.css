@@ -267,6 +267,18 @@ body::before {
   background: #b03a6a;
 }
 
+@keyframes animation-aagePeeche {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* Responsive adjustments */
 @media (min-width: 500px) {
   .header-main {
@@ -335,4 +347,33 @@ body::before {
     max-width: 100%;
     padding: 1.2rem 0.7rem;
   }
+}
+
+.site-footer a {
+  background: linear-gradient(-45deg, #ffb224, #e34ba9, #0072f5, #95f3d9);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  animation: animation-aagePeeche 5s ease infinite;
+  transition: all 0.5s ease;
+  font-weight: 700;
+}
+
+@keyframes animation-aagePeeche {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.site-footer a:hover, .site-footer a:focus {
+  text-decoration: underline;
 }
