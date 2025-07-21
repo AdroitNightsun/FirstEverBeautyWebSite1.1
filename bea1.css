@@ -6,13 +6,26 @@
 }
 body {
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-  background-image: url(images/3.jpg);
+  /* background-image: url(images/3.jpg); */
   color: #2d2d2d;
   min-height: 100vh;
   padding-top: 80px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background-image: url(images/3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  pointer-events: none;
 }
 
 /* Navbar */
