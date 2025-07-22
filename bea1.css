@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
   /* background-image: url(images/3.jpg); */
@@ -26,6 +31,11 @@ body::before {
   background-repeat: no-repeat;
   opacity: 1;
   pointer-events: none;
+}
+
+body.loading::before {
+  background-image: none;
+  background-color: #f5f5f5;
 }
 
 /* Navbar */
@@ -162,6 +172,14 @@ body::before {
   transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
   user-select: none;
 }
+
+.service-card {
+  cursor: pointer;
+}
+.service-card:hover {
+  background: rgba(255,255,255,0.7);
+}
+
 .service-card:active {
   transform: scale(0.97);
   box-shadow: 0 2px 8px rgba(176,58,106,0.13);
