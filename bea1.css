@@ -357,10 +357,23 @@ body::before {
   background-clip: text;
   color: transparent;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
+  position: relative;
   animation: animation-aagePeeche 5s ease infinite;
   transition: all 0.5s ease;
   font-weight: 700;
+}
+
+.site-footer a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(-45deg, #ffb224, #e34ba9, #0072f5, #95f3d9);
+  background-size: 300% 300%;
+  animation: animation-aagePeeche 5s ease infinite;
 }
 
 @keyframes animation-aagePeeche {
@@ -375,5 +388,5 @@ body::before {
   }
 }
 .site-footer a:hover, .site-footer a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
