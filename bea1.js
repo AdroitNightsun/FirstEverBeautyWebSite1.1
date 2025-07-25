@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function showImage(index) {
     images.forEach((img, i) => {
-      img.style.display = i === index ? 'block' : 'none';
+      img.classList.toggle('active', i === index);
     });
     dots.forEach((dot, i) => {
       dot.classList.toggle('active', i === index);
@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  showImage(0);
-  startCarousel();
+  // Initial setup
+  if (images.length > 0) {
+    showImage(0);
+    startCarousel();
+  }
 });
